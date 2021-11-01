@@ -1,0 +1,30 @@
+.catalog__search-block {
+  display: flex;
+}
+
+.catalog__search {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+}
+
+.catalog__search-line {
+  border: 1px solid $color3;
+  border-radius: 5px 0px 0px 5px;
+  width: 100%;
+  padding: 10px 16px 10px 16px;
+}
+
+.catalog__search-icon {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
+
+.catalog__search-label {
+  @include text;
+  position: absolute;
+  top: 8px;
+  left: 56px;
+
+}
