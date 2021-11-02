@@ -15,56 +15,69 @@
   <main class="main">
     <div class="main__container">
       <section class="catalog">
+        <h1 class="visually-hidden">Каталог товаров</h1>
         <div class="catalog__search-block">
           <form class="catalog__search">
             <input class="catalog__search-line" type="search" name="search" id="search">
             <svg class="catalog__search-icon" width="17" height="17">
               <use xlink:href="img/icons/sprite.svg#search-icon"></use>
             </svg>
-            <label class="catalog__search-label">Запрос пользователя</label>
-            <button class="catalog__button catalog__button--search">
-              Найти
-            </button>
+            <div class="catalog__request-block">
+              <span class="catalog__request">Запрос пользователя</span>
+              <button class="catalog__request-close-button">
+                <svg class="catalog__request-close-icon" width="10" height="10">
+                  <use xlink:href="img/icons/sprite.svg#cross-icon"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="catalog__button catalog__button--search">Найти</button>
           </form>
-          <button class="catalog__button catalog__button--close">
-            Закрыть
-          </button>
+          <button class="catalog__button catalog__button--close">Закрыть</button>
         </div>
-        <div class="catalog__content">
-          <div class="catalog__results-block">
-            <span class="catalog__results">Результаты по запросу</span>
-            <span>Показаны результаты для “Запрос пользозвателя”. Вы искали “Запрос пользователя”.</span>
+        <div class="catalog__results-block">
+          <div class="catalog__results">
+            <h2 class="catalog__title">Результаты по запросу</h2>
+            <p class="catalog__sub-title">Показаны результаты для “<span class="catalog__request-text">Запрос пользователя</span>”. Вы искали “<span class="catalog__request-text">Запрос пользователя</span>”.</p>
           </div>
           <ul class="catalog__categories">
             <li class="catalog__categories-item">
-              <a class="catalog__categories-name">Название категории</фclass=>
-              <div class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</div>
+              <img class="catalog__categories-image" src="img/product-image.jpg" alt="Изображение товара">
+              <a class="catalog__categories-name">Название категории</a>
+              <p class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</p>
             </li>
             <li class="catalog__categories-item">
+              <img class="catalog__categories-image" src="img/product-image.jpg" alt="Изображение товара">
               <a class="catalog__categories-name">Название категории</a>
-              <div class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</div>
+              <p class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</p>
             </li>
             <li class="catalog__categories-item">
+              <img class="catalog__categories-image" src="img/product-image.jpg" alt="Изображение товара">
               <a class="catalog__categories-name">Название категории</a>
-              <div class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</div>
+              <p class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</p>
             </li>
             <li class="catalog__categories-item">
+              <img class="catalog__categories-image" src="img/product-image.jpg" alt="Изображение товара">
               <a class="catalog__categories-name">Название категории</a>
-              <div class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</div>
+              <p class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</p>
             </li>
             <li class="catalog__categories-item">
+              <img class="catalog__categories-image" src="img/product-image.jpg" alt="Изображение товара">
               <a class="catalog__categories-name">Название категории</a>
-              <div class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</div>
+              <p class="catalog__categories-count"><span class="catalog__categories-number">134</span> товара</p>
             </li>
           </ul>
-          <ul class="catalog__all-categories">
-            <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-            <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-            <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-            <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-            <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-          </ul>
-          <button class="catalog__all-categories-button">Ещё 10 категорий...</button>
+        </div>
+
+        <ul class="catalog__all-categories">
+          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
+          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
+          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
+          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
+          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
+        </ul>
+        <button class="catalog__all-categories-button">Ещё 10 категорий...</button>
+        <div>
+
         </div>
 
         <form class="catalog__filters" method="get" action="#">

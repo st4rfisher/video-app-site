@@ -7,3 +7,59 @@
   word-break: break-word;
   letter-spacing: 0.04em;
 }
+
+@mixin button-colored {
+  @include text;
+  background-color: $color4;
+  border: none;
+  border-radius: 0px 3px 3px 0px;
+  color: $color1;
+}
+
+@mixin button {
+  @include text;
+  background-color: transparent;
+  border: 1px solid $color5;
+  border-radius: 3px;
+  color: $color1;
+}
+
+@mixin title {
+  font-family: Arial, "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+
+@mixin paragraph {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  word-break: break-word;
+  letter-spacing: 0.03em;
+}
+
+@mixin paragraph {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  word-break: break-word;
+  letter-spacing: 0.03em;
+}
+
+@mixin paragraph-mini {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  word-break: break-word;
+  letter-spacing: 0.03em;
+}
+
