@@ -6,7 +6,7 @@ const sync = require('browser-sync');
 const webpack = require('webpack-stream');
 
 module.exports = function scripts() {
-	return src('source/js/main.js')
+	return src('source/js/scripts.js')
     .pipe(webpack({
       output: {
         filename: 'bundle.js'

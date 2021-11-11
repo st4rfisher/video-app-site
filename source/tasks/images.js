@@ -5,17 +5,17 @@ const {
 const imagemin = require('gulp-imagemin');
 
 module.exports = function imagesOptimization() {
-  return src('source/img/**/*.{png,jpg,svg}')
+  return src('source/images/**/*.{png,jpg,svg}')
   .pipe(imagemin([
     imagemin.mozjpeg({progressive: true}),
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.svgo()
   ]))
-  .pipe(dest('build/img'))
+  .pipe(dest('build/images'))
 }
 
 module.exports = function copyImages() {
-  return src('source/img/**/*.{png,jpg,svg}')
-    .pipe(dest('build/img'))
+  return src('source/images/**/*.{png,jpg,svg}')
+    .pipe(dest('build/images'))
 }
 

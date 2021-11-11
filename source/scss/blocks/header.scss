@@ -1,13 +1,7 @@
-
 .header__container {
-  background-color: $color1;
-  max-width: $desktop;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 38px 24px 36px 24px;
+
 }
 
 .header__title {
-  @include text;
-  color: $color2;
+
 }

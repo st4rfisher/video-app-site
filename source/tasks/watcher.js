@@ -4,9 +4,9 @@ const {
 } = require('gulp');
 
 module.exports = function watcher() {
-  watch('source/img/**/*.+(png|jpg|jpeg)', series('imagesOptimization'));
-  watch('source/img/icons/*.svg', series('sprite'));
+  watch('source/images/**/*.+(png|jpg|jpeg)', series('imagesOptimization'));
+  watch('source/images/icons/*.svg', series('sprite'));
   watch('source/js/**/*.js', series('scripts'));
   watch('source/scss/**/*.scss', series('styles'));
-  watch('source/*.html', series('html', 'reload'));
+  watch('source/**/*.html', series('html', 'reload'));
 }

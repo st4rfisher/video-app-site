@@ -5,7 +5,7 @@ const {
 const webp = require('gulp-webp');
 
 module.exports = function createWebp() {
-  return src('source/img/**/*.{jpg,png}')
+  return src('source/images/**/*.{jpg,png}')
     .pipe(webp({quality: 90}))
-    .pipe(dest('build/img'))
+    .pipe(dest('build/images'))
 }

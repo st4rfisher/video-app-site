@@ -7,8 +7,8 @@ module.exports = function copy(done) {
   src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
-    'source/img/**/*.svg',
-    '!source/img/icons/*.svg',
+    'source/images/**/*.svg',
+    '!source/images/icons/*.svg',
   ], {
     base: 'source'
   })

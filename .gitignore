@@ -7,7 +7,13 @@
 *.psd
 *.sublime*
 node_modules/
+.idea_modules/
 npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+.directory
+.AppleDouble
+.LSOverride
+*~
+# build/

@@ -6,6 +6,7 @@ exports.clean = tasks.clean;
 exports.copy = tasks.copy;
 exports.imagesOptimization = tasks.images;
 exports.html = tasks.html;
+exports.copyImages = tasks.images;
 exports.styles = tasks.styles;
 exports.scripts = tasks.scripts;
 exports.sprite = tasks.sprite;
