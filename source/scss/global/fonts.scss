@@ -1,24 +1,48 @@
 @font-face {
-  font-family: "fontname";
-  font-weight: 400;
+  font-family: "Montserrat";
   font-style: normal;
+  font-weight: 700;
   font-display: swap;
-  src: url('../fonts/fontname.eot');
-  src: local("fontname"),
-    url("../fonts/fontname.woff2") format("woff2"),
-    url("../fonts/fontname.woff") format("woff"),
-    url('../fonts/fontname.ttf') format('truetype'),
-    url('../fonts/fontname.svg') format('svg');
+  src: url('../fonts/montserrat-bold.eot');
+  src: local("Montserrat"),
+    url("../fonts/montserrat-bold.woff2") format("woff2"),
+    url("../fonts/montserrat-bold.woff") format("woff"),
+    url("../fonts/montserrat-bold.ttf") format("truetype"),
+    url("../fonts/montserrat-bold.svg") format("svg");
 }
 
 @font-face {
-  font-family: "fontname";
-  font-weight: 700;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat"),
+    url("../fonts/montserrat-medium.woff2") format("woff2"),
+    url("../fonts/montserrat-medium.woff") format("woff"),
+    url("../fonts/montserrat-medium.ttf") format("truetype"),
+    url("../fonts/montserrat-medium.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: local("fontname"),
-    url("../fonts/fontname.woff2") format("woff2"),
-    url("../fonts/fontname.woff") format("woff"),
-    url('../fonts/fontname.ttf') format('truetype'),
-    url('../fonts/fontname.svg') format('svg');
+  src: local("Ubuntu"),
+    url("../fonts/montserrat-semibold.woff2") format("woff2"),
+    url("../fonts/montserrat-semibold.woff") format("woff"),
+    url('../fonts/montserrat-semibold.ttf') format('truetype'),
+    url('../fonts/montserrat-semibold.svg') format('svg');
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: local("Open Sans"),
+    url("../fonts/opensans-regular.woff2") format("woff2"),
+    url("../fonts/opensans-regular.woff") format("woff"),
+    url('../fonts/opensans-regular.ttf') format('truetype'),
+    url('../fonts/opensans-regular.svg') format('svg');
 }

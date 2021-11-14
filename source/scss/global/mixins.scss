@@ -1,4 +1,103 @@
-@mixin text {
-
+@mixin menu-text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color3;
+  word-break: break-word;
 }
 
+@mixin title-1-mobile {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  word-break: break-word;
+  color: $color3;
+  text-align: center;
+}
+
+@mixin title-1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 52px;
+  word-break: break-word;
+}
+
+@mixin title-2-mobile {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 28px;
+  word-break: break-word;
+}
+
+@mixin title-2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  word-break: break-word;
+}
+
+@mixin paragraph-1-mobile {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-word;
+  color: $color3;
+  text-align: center;
+}
+
+@mixin paragraph-1 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  word-break: break-word;
+}
+
+@mixin paragraph-2 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  word-break: break-word;
+}
+
+@mixin paragraph-3 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  word-break: break-word;
+}
+
+@mixin button-link {
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 600;
+  outline: none;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 15px;
+  word-break: break-word;
+  box-sizing: border-box;
+  padding: 13px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin colored-button-link {
+  color: $color1;
+  background-color: $color3;
+  border: none;
+}
+
+@mixin uncolored-button-link {
+  color: $color3;
+  background-color: transparent;
+  border: 1px solid $color3;
+}

@@ -1,0 +1,43 @@
+.introduction {
+  background: $background;
+}
+
+.introduction__title {
+  @include title-1-mobile;
+}
+
+.introduction__paragraph {
+  @include paragraph-1-mobile;
+}
+
+.introduction__link {
+  @include button-link;
+  @include colored-button-link;
+  width: 222px;
+
+  &--uncolored {
+    @include uncolored-button-link;
+    background-color: transparent;
+  }
+}
+
+.introduction__item {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: $color3;
+  word-break: break-word;
+  border: 2px solid $color3;
+  border-radius: 100px;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 227px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--active {
+    border: 2px solid $color4;
+    color: $color4;
+  }
+}
