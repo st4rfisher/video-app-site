@@ -1,10 +1,142 @@
 <main class="main">
   <div class="main__container">
-    <section class="section">
-      <h2 class="section__title">Заголовок блока</h2>
+    <section class="introduction">
+      <h1 class="introduction__title">Бесплатные видеозвонки для общения без границ</h1>
+      <p class="introduction__paragraph">
+        Для начала звонка отправьте собеседнику ссылку-приглашение.
+        Общайтесь с коллегами, бизнес-партнерами и друзьями бесплатно
+        и без ограничений по времени.
+      </p>
+      <a class="introduction__link">Начать звонок</a>
+      <a class="introduction__link introduction__link--uncolored">Конференция</a>
+      <p class="introduction__paragraph">
+        Для входа в VideoApplication авторизуйтесь
+        или зарегистрируйтесь в системе.
+      </p>
+      <div class="introduction__image-block" role="img">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-1.webp">
+          <source type="image/webp" srcset="images/photo-1-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/photo-1.jpg">
+          <img class="introduction__image" src="images/photo-1-mobile.jpg" alt="Фото">
+        </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-2.webp">
+          <source type="image/webp" srcset="images/photo-2-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/photo-2.jpg">
+          <img class="introduction__image" src="images/photo-2-mobile.jpg" alt="Фото">
+        </picture>
+        <svg class="introduction__image" width="200px" height="200px">
+          <use xlink:href="images/icons/sprite.svg#image-1"></use>
+        </svg>
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/image-2-tablet.webp">
+          <source type="image/webp" srcset="images/image-2-tablet.webp">
+          <source media="(min-width: 768px)" srcset="images/image-2-desktop.jpg">
+          <img class="introduction__image" src="images/image-2-desktop.jpg" alt="Фото">
+        </picture>
+      </div>
+      <ul class="introduction__features">
+        <li class="introduction__item">Бесплатно</li>
+        <li class="introduction__item">Вход по ссылке</li>
+        <li class="introduction__item">Без ограничений по времени</li>
+        <li class="introduction__item">Звонки из браузера</li>
+        <li class="introduction__item">Демонстрация экрана</li>
+        <li class="introduction__item">Безопасно</li>
+      </ul>
     </section>
-    <section class="section1">
-      <h2 class="section1__title">Заголовок блока</h2>
+    <section class="group-calls">
+      <h2 class="group-calls__title">Больше возможностей для бизнеса с групповыми звонками</h2>
+      <p class="group-calls__paragraph">
+        Одновременное участие в конференции до 8 человек, возможность
+        демонстрации экрана, переписка в удобном текстовом чате – в
+        VideoApplication есть все для комфортного обсуждения проектов.
+      </p>
+      <a href="group-calls__link">Начать конференцию</a>
+      <div class="group-calls__image-block" role="img">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-3.webp">
+          <source type="image/webp" srcset="images/photo-3-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/photo-3.jpg">
+          <img class="group-calls__image" src="images/photo-3-mobile.jpg" alt="Фото">
+        </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/image-5.webp">
+          <source type="image/webp" srcset="images/image-5-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/image-5.jpg">
+          <img class="group-calls__image" src="images/image-5-mobile.jpg" alt="Фото">
+        </picture>
+      </div>
+    </section>
+    <section class="security">
+      <h2 class="group-calls__title">Повышенная безопасность</h2>
+      <p class="security__paragraph">
+        Защиту соединения обеспечивает технология WebRTC. При желании вы
+        можете выбрать закрытый тип конференции. В таком случае собеседник
+        сможет присоединиться к звонку только после авторизации или через
+        функцию распознавания лица.
+      </p>
+      <a href="security__link">Начать конференцию</a>
+      <div class="security__image-block" role="img">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4.webp">
+          <source type="image/webp" srcset="images/photo-4-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/photo-4.jpg">
+          <img class="group-calls__image" src="images/photo-4-mobile.jpg" alt="Фото">
+        </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/image-4.webp">
+          <source type="image/webp" srcset="images/image-4-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/image-4.jpg">
+          <img class="group-calls__image" src="images/image-4-mobile.jpg" alt="Фото">
+        </picture>
+      </div>
+    </section>
+    <section class="access">
+      <h2 class="access__title">Удобный доступ с любого устройства</h2>
+      <p class="access__paragraph">
+        VideoApplication не требует установки приложения: просто отправьте
+        ссылку. Ответить на звонок можно прямо из браузера на смартфоне,
+        планшете или компьютере.
+      </p>
+      <a href="access__link">Начать звонок</a>
+      <a href="access__link access__link--uncolored">Конференция</a>
+      <div class="access__image-block" role="img">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4.webp">
+          <source type="image/webp" srcset="images/photo-4-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/photo-4.jpg">
+          <img class="access__image" src="images/photo-4-mobile.jpg" alt="Фото">
+        </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/image-4.webp">
+          <source type="image/webp" srcset="images/image-4-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/image-4.jpg">
+          <img class="access__image" src="images/image-4-mobile.jpg" alt="Фото">
+        </picture>
+      </div>
+    </section>
+    <section class="streams">
+      <h2 class="streams__title">Проводите онлайн-трансляции</h2>
+      <p class="streams__paragraph">
+        Помимо звонков, вы можете использовать VideoApplication для
+        проведения онлайн-трансляций. Количество зрителей не ограничено.
+      </p>
+      <a href="streams__link">Начать звонок</a>
+      <div class="access__image-block" role="img">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4.webp">
+          <source type="image/webp" srcset="images/photo-4-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/photo-4.jpg">
+          <img class="streams__image" src="images/photo-4-mobile.jpg" alt="Фото">
+        </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/image-4.webp">
+          <source type="image/webp" srcset="images/image-4-mobile.webp">
+          <source media="(min-width: 768px)" srcset="images/image-4.jpg">
+          <img class="streams__image" src="images/image-4-mobile.jpg" alt="Фото">
+        </picture>
+      </div>
     </section>
   </div>
 </main>

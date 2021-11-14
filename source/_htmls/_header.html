@@ -1,9 +1,13 @@
 <header class="header">
   <div class="header__container">
     <nav class="header__navigation">
-      <a href="header__logo">Лого</a>
+      @@include('./_components/_logo.html')
       @@include('./_components/_menu.html')
-      <button class="header__menu-button"></button>
+      <button class="header__menu-button">
+        <svg class="header__icon" width="20px" height="20px">
+          <use xlink:href="images/icons/sprite.svg#burger-menu-icon"></use>
+        </svg>
+      </button>
     </nav>
   </div>
 </header>
