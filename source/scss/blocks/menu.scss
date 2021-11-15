@@ -1,3 +1,8 @@
 .menu {
   @include menu-text;
+  display: none;
+}
+
+.menu__close {
+  @include button-link-modified(none, $transparent, none);
 }

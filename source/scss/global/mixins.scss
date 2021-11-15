@@ -14,6 +14,7 @@
   line-height: $line-height;
   color: $color;
   word-break: break-word;
+  margin: 0 23px;
 }
 
 @mixin paragraph($font-size, $line-height, $color) {
@@ -136,3 +137,5 @@
   background-color: $background-color;
   border: $border;
 }
+
+

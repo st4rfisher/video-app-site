@@ -1,13 +1,23 @@
 .introduction {
-  background: $background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 17px;
 }
 
 .introduction__title {
   @include title(24px, 32px, $color3);
+  text-align: center;
 }
 
 .introduction__paragraph {
-  @include paragraph(16px, 26px, $color3);
+  @include paragraph(13px, 20px, $color3);
+  text-align: center;
+  margin: 33px 23px;
+
+  &:nth-of-type(2) {
+    margin: 0 23px;
+  }
 }
 
 .introduction__link {

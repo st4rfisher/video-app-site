@@ -1,7 +1,15 @@
 .header__container {
-  
+
 }
 
-.header__title {
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
 
+.header__menu-button {
+  @include button-link-modified(none, $transparent, none);
+  padding: 5px;
 }
