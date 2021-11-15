@@ -1,0 +1,23 @@
+.access {
+
+}
+
+.access__title {
+  @include title(24px, 32px, $color8);
+}
+
+.access__paragraph {
+  @include paragraph(16px, 26px, $color8);
+}
+
+.access__link {
+  @include button-link;
+
+  &--colored {
+    @include button-link-modified($color3, $color1, none);
+  }
+
+  &--uncolored {
+    @include button-link-modified($color1, $transparent, $link-border-2);
+  }
+}

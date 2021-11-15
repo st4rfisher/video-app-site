@@ -3,21 +3,22 @@
 }
 
 .introduction__title {
-  @include title-1-mobile;
+  @include title(24px, 32px, $color3);
 }
 
 .introduction__paragraph {
-  @include paragraph-1-mobile;
+  @include paragraph(16px, 26px, $color3);
 }
 
 .introduction__link {
   @include button-link;
-  @include colored-button-link;
-  width: 222px;
+
+  &--colored {
+    @include button-link-modified($color1, $color3, none);
+  }
 
   &--uncolored {
-    @include uncolored-button-link;
-    background-color: transparent;
+    @include button-link-modified($color3, $transparent, $link-border-1);
   }
 }
 
