@@ -1,6 +1,7 @@
 
 .group-calls__title {
-  @include title(17px, 28px, $color8);
+  @include title(17px, 28px, $color3);
+  text-align: center;
 }
 
 .group-calls__paragraph {

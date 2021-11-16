@@ -15,6 +15,7 @@
   color: $color;
   word-break: break-word;
   margin: 0 23px;
+  max-width: 350px;
 }
 
 @mixin paragraph($font-size, $line-height, $color) {
@@ -24,7 +25,17 @@
   line-height: $line-height;
   color: $color;
   word-break: break-word;
+  max-width: 350px;
 }
+
+@mixin flex-container($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 
 // @mixin title-1-mobile {
 //   font-family: "Montserrat";

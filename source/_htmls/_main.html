@@ -1,6 +1,6 @@
 <main class="main">
-  <div class="main__container container">
-    <section class="introduction">
+  <div class="main__container">
+    <section class="introduction  container">
       <h1 class="introduction__title">Бесплатные видеозвонки для общения без границ</h1>
       <p class="introduction__paragraph">
         Для начала звонка отправьте собеседнику ссылку-приглашение.
@@ -13,36 +13,34 @@
         Для входа в VideoApplication авторизуйтесь
         или зарегистрируйтесь в системе.
       </p>
-      <div class="introduction__image-block" role="img">
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-1.webp">
-          <source type="image/webp" srcset="images/photo-1-mobile.webp">
-          <source media="(min-width: 768px)" srcset="images/photo-1.jpg">
-          <img class="introduction__image" src="images/photo-1-mobile.jpg" alt="Фото">
-        </picture>
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-2.webp">
-          <source type="image/webp" srcset="images/photo-2-mobile.webp">
-          <source media="(min-width: 768px)" srcset="images/photo-2.jpg">
-          <img class="introduction__image" src="images/photo-2-mobile.jpg" alt="Фото">
-        </picture>
-        <svg class="introduction__image" width="200px" height="200px">
-          <use xlink:href="images/icons/sprite.svg#image-1"></use>
-        </svg>
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/image-2-tablet.webp">
-          <source type="image/webp" srcset="images/image-2-tablet.webp">
-          <source media="(min-width: 768px)" srcset="images/image-2-desktop.jpg">
-          <img class="introduction__image" src="images/image-2-desktop.jpg" alt="Фото">
-        </picture>
-      </div>
-      <ul class="introduction__features">
-        <li class="introduction__item introduction__item--active">Бесплатно</li>
-        <li class="introduction__item">Вход по ссылке</li>
-        <li class="introduction__item">Без ограничений по времени</li>
-        <li class="introduction__item">Звонки из браузера</li>
-        <li class="introduction__item">Демонстрация экрана</li>
-        <li class="introduction__item">Безопасно</li>
+        <div class="introduction__image-wrapper" >
+          <div class="introduction__image-block" role="img">
+            <picture class="introduction__picture introduction__picture--1">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-1.webp">
+              <source type="image/webp" srcset="images/photo-1-mobile.webp">
+              <source media="(min-width: 768px)" srcset="images/photo-1.jpg">
+              <img class="introduction__image introduction__image--1" src="images/photo-1-mobile.jpg" alt="Фото">
+            </picture>
+            <img class="introduction__image introduction__image--2" src="images/image-1.svg">
+            <picture class="introduction__picture introduction__picture--2">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-2.webp">
+              <source type="image/webp" srcset="images/photo-2-mobile.webp">
+              <source media="(min-width: 768px)" srcset="images/photo-2.jpg">
+              <img class="introduction__image introduction__image--3" src="images/photo-2-mobile.jpg" alt="Фото">
+            </picture>
+            <img class="introduction__image introduction__image--4" src="images/image-3.jpg">
+          </div>
+        </div>
+    </section>
+    <section class="features container">
+      <h2 class="features__title visually-hidden">Преимущества</h2>
+      <ul class="features__list">
+        <li class="features__item features__item--active">Бесплатно</li>
+        <li class="features__item">Вход по ссылке</li>
+        <li class="features__item">Без ограничений по времени</li>
+        <li class="features__item">Звонки из браузера</li>
+        <li class="features__item">Демонстрация экрана</li>
+        <li class="features__item">Безопасно</li>
       </ul>
     </section>
     <section class="group-calls">
