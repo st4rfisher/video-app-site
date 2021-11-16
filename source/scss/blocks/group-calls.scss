@@ -1,14 +1,57 @@
+.group-calls {
+  @include flex-container(column, center, center);
+  background-color: $color3;
+  background-image: url("../images/figure-1.svg");
+  background-repeat: no-repeat;
+  background-position: -350px -330px;
+  background-size: cover;
+  padding-top: 46px;
+  padding-bottom: 48px;
+}
 
 .group-calls__title {
-  @include title(17px, 28px, $color3);
+  @include title(17px, 28px, $color8, 0);
   text-align: center;
+
 }
 
 .group-calls__paragraph {
   @include paragraph(16px, 26px, $color8);
+  margin: 44px 23px;
+
 }
 
 .group-calls__link {
   @include button-link;
   @include button-link-modified($color3, $color1, none);
 }
+
+.group-calls__image-block {
+  position: relative;
+  margin: 94px 45px 111px 10px;
+}
+
+
+.group-calls__picture {
+  display: block;
+
+  &--2 {
+    position: absolute;
+    top: 162px;
+    left: 125px;
+  }
+}
+
+.group-calls__image {
+  box-shadow: $box-shadow;
+
+  &--1 {
+    border-radius: 20px;
+  }
+
+  &--2 {
+    border-radius: 15px 15px 10px 10px;
+  }
+}
+
+

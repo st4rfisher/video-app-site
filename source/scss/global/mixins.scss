@@ -7,15 +7,16 @@
   word-break: break-word;
 }
 
-@mixin title($font-size, $line-height, $color) {
+@mixin title($font-size, $line-height, $color, $margin: 0 23px) {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: $font-size;
   line-height: $line-height;
   color: $color;
   word-break: break-word;
-  margin: 0 23px;
+  margin: $margin;
   max-width: 350px;
+  text-align: center;
 }
 
 @mixin paragraph($font-size, $line-height, $color) {
@@ -26,6 +27,7 @@
   color: $color;
   word-break: break-word;
   max-width: 350px;
+  text-align: center;
 }
 
 @mixin flex-container($direction, $align, $justify) {
