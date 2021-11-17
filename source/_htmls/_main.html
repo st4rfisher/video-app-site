@@ -66,7 +66,7 @@
         </picture>
       </div>
     </section>
-    <section class="security">
+    <section class="security container">
       <h2 class="security__title">Повышенная безопасность</h2>
       <p class="security__paragraph">
         Защиту соединения обеспечивает технология WebRTC. При желании вы
@@ -75,19 +75,21 @@
         функцию распознавания лица.
       </p>
       <a class="security__link" href="#">Начать конференцию</a>
-      <div class="security__image-block" role="img">
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4.webp">
-          <source type="image/webp" srcset="images/photo-4-mobile.webp">
-          <source media="(min-width: 768px)" srcset="images/photo-4.jpg">
-          <img class="security__image" src="images/photo-4-mobile.jpg" alt="Фото">
-        </picture>
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/image-4.webp">
-          <source type="image/webp" srcset="images/image-4-mobile.webp">
-          <source media="(min-width: 768px)" srcset="images/image-4.jpg">
-          <img class="security__image" src="images/image-4-mobile.jpg" alt="Фото">
-        </picture>
+      <div class="security__image-wrapper">
+        <div class="security__image-block" role="img">
+          <picture class="security__picture security__picture--1">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4.webp">
+            <source type="image/webp" srcset="images/photo-4-mobile.webp">
+            <source media="(min-width: 768px)" srcset="images/photo-4.jpg">
+            <img class="security__image security__image--1" src="images/photo-4-mobile.jpg" alt="Фото"></picture>
+          </picture>
+          <picture class="security__picture security__picture--2">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/image-4.webp">
+            <source type="image/webp" srcset="images/image-4-mobile.webp">
+            <source media="(min-width: 768px)" srcset="images/image-4.jpg">
+            <img class="security__image security__image--2" src="images/image-4-mobile.jpg" alt="Фото">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="access">
