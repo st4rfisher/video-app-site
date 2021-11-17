@@ -1,6 +1,7 @@
 .introduction {
   @include flex-container(column, center, center);
   row-gap: 18px;
+  padding-top: 41px;
 }
 
 .introduction__title {
@@ -55,8 +56,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: -18px;
-      left: -16px;
+      top: -16px;
+      left: -24px;
       background-image: url("../images/dots-2.svg");
       background-repeat: no-repeat;
       width: 101px;
