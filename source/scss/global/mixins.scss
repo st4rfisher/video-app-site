@@ -38,7 +38,32 @@
   justify-content: $justify;
 }
 
+@mixin panel($top) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  height: 29px;
+  width: 104px;
+  background: url("../images/icons/disable-video-icon.svg"),
+              url("../images/icons/disable-call-icon.svg"),
+              url("../images/icons/mute-icon.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0px, 37px 0, 75px 0;
+}
 
+@mixin shadow($width) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  height: 100%;
+  width: $width;
+  background: $box-shadow-2;
+  border-radius: 20px;
+}
 // @mixin title-1-mobile {
 //   font-family: "Montserrat";
 //   font-weight: 700;

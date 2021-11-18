@@ -51,30 +51,11 @@
 
 .security__picture--1 {
     &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      content: "";
-      height: 100%;
-      width: 256px;
-      background: $box-shadow-2;
-      border-radius: 20px;
+      @include shadow(256px);
     }
 
     &::after {
-      position: absolute;
-      top: 345px;
-      left: 50%;
-      transform: translateX(-50%);
-      content: "";
-      height: 29px;
-      width: 104px;
-      background: url("../images/icons/disable-video-icon.svg"),
-                  url("../images/icons/disable-call-icon.svg"),
-                  url("../images/icons/mute-icon.svg");
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: 0 0px, 37px 0, 75px 0;
+      @include panel(346px);
     }
   }
 
@@ -89,7 +70,7 @@
 
   &--2 {
     position: absolute;
-    top: -127px;
+    top: -137px;
     left: 100%;
     transform: translateX(-100%);
     border-radius: 10px;
