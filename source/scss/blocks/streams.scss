@@ -1,19 +1,37 @@
 .streams {
-  background-color: $background;
+  @include flex-container(column, center, center);
+  padding-top: 47px;
 }
 
 .streams__title {
-  @include title(17px, 28px, $color8);
+  @include title(24px, 32px, $color3, 0);
 }
 
 .streams__paragraph {
-  @include paragraph(16px, 26px, $color8);
+  @include paragraph(16px, 26px, $color3);
+  margin: 44px 18px;
 }
 
 .streams__link {
   @include button-link;
 
   &--colored {
-    @include button-link-modified($color3, $color1, none);
+    @include button-link-modified($color1, $color3, none);
   }
+}
+
+.streams__picture {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.streams__image {
+
+  display: block;
+
+  &--2 {
+    object-fit: none;
+  }
+  width: 100%;
 }
