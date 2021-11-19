@@ -1,13 +1,18 @@
 .access {
-
+  @include flex-container(column, center, center);
+  row-gap: 18px;
+  background-color: $color3;
+  padding-top: 49px;
+  padding-bottom: 32px;
 }
 
 .access__title {
-  @include title(17px, 28px, $color8);
+  @include title(17px, 28px, $color8, 0 17px);
 }
 
 .access__paragraph {
   @include paragraph(16px, 26px, $color8);
+  margin: 26px 15px;
 }
 
 .access__link {
@@ -21,3 +26,50 @@
     @include button-link-modified($color1, $transparent, $link-border-2);
   }
 }
+
+
+.access__image-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 49px 48px 0 0;
+}
+
+.access__image-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 300px;
+  max-height: 1050px;
+  margin: 88px auto 30px auto;
+}
+
+.access__picture {
+  &--2 {
+    position: relative;
+    margin-right: 28px;
+  }
+}
+
+.access__image {
+  display: block;
+
+  &--1 {
+    margin: 0 auto;
+    box-shadow: $box-shadow;
+    max-width: 250px;
+  }
+
+  &--2 {
+    position: absolute;
+    top: -259px;
+    left: 100%;
+    transform: translateX(-100%);
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    margin-left: 69px;
+    border-radius: 18px;
+    outline: 2px solid $color3;
+  }
+}
+

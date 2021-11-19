@@ -20,7 +20,6 @@
 
 .security__image-wrapper {
   width: 100%;
-
   box-sizing: border-box;
 }
 
@@ -35,14 +34,6 @@
 }
 
 .security__picture {
-  &--2 {
-    // &::before {
-    //   content: "";
-    //   height: 100%;
-
-    // }
-  }
-
   &--2 {
     position: relative;
     margin-right: 28px;

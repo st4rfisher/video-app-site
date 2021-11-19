@@ -92,7 +92,7 @@
         </div>
       </div>
     </section>
-    <section class="access">
+    <section class="access container">
       <h2 class="access__title">Удобный доступ с любого устройства</h2>
       <p class="access__paragraph">
         VideoApplication не требует установки приложения: просто отправьте
@@ -101,19 +101,22 @@
       </p>
       <a class="access__link access__link--colored" href="#">Начать звонок</a>
       <a class="access__link access__link--uncolored" href="#">Конференция</a>
-      <div class="access__image-block" role="img">
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4.webp">
-          <source type="image/webp" srcset="images/photo-4-mobile.webp">
-          <source media="(min-width: 768px)" srcset="images/photo-4.jpg">
-          <img class="access__image" src="images/photo-4-mobile.jpg" alt="Фото">
-        </picture>
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/image-4.webp">
-          <source type="image/webp" srcset="images/image-4-mobile.webp">
-          <source media="(min-width: 768px)" srcset="images/image-4.jpg">
-          <img class="access__image" src="images/image-4-mobile.jpg" alt="Фото">
-        </picture>
+
+      <div class="access__image-wrapper">
+        <div class="access__image-block" role="img">
+          <picture class="access__picture access__picture--1">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-5.webp">
+            <source type="image/webp" srcset="images/photo-5-mobile.webp">
+            <source media="(min-width: 768px)" srcset="images/photo-5.jpg">
+            <img class="access__image access__image--1" src="images/photo-5-mobile.jpg" alt="Фото">
+          </picture>
+          <picture class="access__picture access__picture--2">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-6.webp">
+            <source type="image/webp" srcset="images/photo-6-mobile.webp">
+            <source media="(min-width: 768px)" srcset="images/photo-6.jpg">
+            <img class="access__image access__image--2" src="images/photo-6-mobile.jpg" alt="Фото">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="streams">
