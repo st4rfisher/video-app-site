@@ -20,7 +20,6 @@
 
 .security__image-wrapper {
   width: 100%;
-  box-sizing: border-box;
   margin: 88px auto 50px auto;
 }
 
@@ -43,6 +42,10 @@
     &::before {
       @include shadow(100%);
     }
+
+    &::after {
+      @include panel(0);
+    }
   }
 
   &--2 {
@@ -50,14 +53,6 @@
     margin-right: 28px;
   }
 }
-
-.security__picture--1 {
-
-
-    &::after {
-      @include panel(0);
-    }
-  }
 
 .security__image {
   display: block;
