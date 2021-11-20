@@ -26,9 +26,16 @@
   @include button-link-modified($color3, $color1, none);
 }
 
+.group-calls__image-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 94px 0 111px 0;
+}
+
 .group-calls__image-block {
   position: relative;
-  margin: 94px 45px 111px 10px;
+  margin: 0 auto;
+  max-width: 430px;
 }
 
 
@@ -36,20 +43,25 @@
   display: block;
   height: 300px;
 
+  margin: 0 auto;
+
   &--1 {
+    position: relative;
+    width: min-content;
     &::before {
-      @include shadow(225px);
+      @include shadow(100%);
     }
 
     &::after {
-      @include panel(261px);
+      @include panel(0);
     }
   }
 
   &--2 {
     position: absolute;
     top: 162px;
-    left: 125px;
+    left: 100%;
+    transform: translate(-100%)
   }
 }
 
