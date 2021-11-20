@@ -20,18 +20,39 @@
   }
 }
 
-.streams__picture {
+.streams__image-wrapper {
   position: relative;
-  display: block;
   width: 100%;
+  overflow: hidden;
+  margin: 90px 0 65px 0;
+  border-radius: 10px;
+
+  &::after {
+    @include panel(auto);
+    bottom: 14px;
+  }
+}
+
+.streams__picture {
+  display: block;
+  position: relative;
+  width: min-content;
+  margin: 0 auto;
+  box-shadow: $box-shadow;
+
+  &::before {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    content: "";
+    width: 50px;
+    height: 10px;
+    background: url("../images/dots-4.svg") no-repeat;
+  }
 }
 
 .streams__image {
-
   display: block;
 
-  &--2 {
-    object-fit: none;
-  }
-  width: 100%;
+  border-radius: 10px;
 }
