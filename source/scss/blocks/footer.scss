@@ -1,11 +1,23 @@
 .footer {
-
+  background-color: $color3;
 }
 
 .footer__container {
-
+  @include flex-container(column, center, center);
+  row-gap: 15px;
+  padding: 31px 0 0 0;
 }
 
 .footer__paragraph {
   @include paragraph(16px, 22px, $color1);
+}
+
+.footer__socials {
+  @include flex-container(row, center, center);
+  column-gap: 20px;
+}
+
+.footer__link {
+  color: $color1;
+  text-decoration: none;
 }
