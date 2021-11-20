@@ -1,8 +1,34 @@
 .menu {
   @include menu-text;
   display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    max-width: 300px;
+  }
 }
+
+.menu__list {
+  @include flex-container(row, center, center);
+  column-gap: 31px;
+}
+
+.menu__item {
+  display: block;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
 
 .menu__close {
   @include button-link-modified(none, $transparent, none);
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
+

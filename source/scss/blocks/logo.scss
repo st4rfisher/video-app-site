@@ -2,8 +2,13 @@
   display: block;
   height: 45px;
   width: 45px;
+
+  @media (min-width: $tablet) {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 .logo__image {
-
+  width: 100%;
 }
