@@ -21,6 +21,7 @@
 .security__image-wrapper {
   width: 100%;
   box-sizing: border-box;
+  margin: 88px auto 50px auto;
 }
 
 .security__image-block {
@@ -30,10 +31,20 @@
   flex-wrap: wrap;
   max-width: 488px;
   max-height: 1050px;
-  margin: 88px auto 50px auto;
+  margin: 0 auto;
 }
 
 .security__picture {
+  &--1 {
+    position: relative;
+    width: min-content;
+    margin: 0 auto;
+
+    &::before {
+      @include shadow(100%);
+    }
+  }
+
   &--2 {
     position: relative;
     margin-right: 28px;
@@ -41,12 +52,10 @@
 }
 
 .security__picture--1 {
-    &::before {
-      @include shadow(256px);
-    }
+
 
     &::after {
-      @include panel(346px);
+      @include panel(0);
     }
   }
 

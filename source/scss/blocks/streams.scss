@@ -28,8 +28,8 @@
   border-radius: 10px;
 
   &::after {
-    @include panel(auto);
-    bottom: 14px;
+    @include panel(0);
+    bottom: 5px;
   }
 }
 
@@ -53,6 +53,5 @@
 
 .streams__image {
   display: block;
-
   border-radius: 10px;
 }

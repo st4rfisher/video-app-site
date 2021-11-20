@@ -38,13 +38,13 @@
   justify-content: $justify;
 }
 
-@mixin panel($top) {
+@mixin panel($bottom) {
   position: absolute;
-  top: $top;
+  bottom: $bottom;
   left: 50%;
   transform: translateX(-50%);
   content: "";
-  height: 29px;
+  height: 38px;
   width: 104px;
   background: url("../images/icons/disable-video-icon.svg"),
               url("../images/icons/disable-call-icon.svg"),
