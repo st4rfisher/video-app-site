@@ -14,7 +14,8 @@
 
 .streams__link {
   @include button-link;
-
+  width: 222px;
+  
   &--colored {
     @include button-link-modified($color1, $color3, none);
   }

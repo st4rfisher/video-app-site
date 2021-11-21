@@ -1,4 +1,7 @@
 .page__container {
   min-width: $mobile;
   background: $background;
+  max-width: $desktop;
+  margin: 0 auto;
+  box-shadow: $box-shadow-page;
 }

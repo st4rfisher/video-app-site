@@ -2,11 +2,22 @@
   @include flex-container(column, center, center);
   row-gap: 18px;
   padding-top: 41px;
+
+  @media (min-width: $tablet) {
+    padding-top: 91px;
+    @include flex-container(row, center, center);
+    column-gap: 37px;
+  }
 }
 
 .introduction__title {
   @include title(24px, 32px, $color3);
   text-align: center;
+
+
+  @media (min-width: $tablet) {
+    @include title(46px, 52px, $color3, 0 11%);
+  }
 }
 
 .introduction__paragraph {
@@ -14,20 +25,39 @@
   text-align: center;
   margin: 29px 23px;
 
+
   &:nth-of-type(2) {
     margin: 0 23px;
+
+    @media (min-width: $tablet) {
+      @include paragraph(14px, 18px, $color3);
+      margin: 0 26%;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    @include paragraph(20px, 28px, $color3);
+    margin: 16px 14% 45px 14%;
+    width: 100%;
   }
 }
 
 .introduction__link {
   @include button-link;
+  width: 222px;
+
+  @media (min-width: $tablet) {
+    width: 185px;
+  }
 
   &--colored {
     @include button-link-modified($color1, $color3, none);
+
   }
 
   &--uncolored {
     @include button-link-modified($color3, $transparent, $link-border-1);
+
   }
 }
 
@@ -35,6 +65,10 @@
   width: 100%;
   padding: 53px 22px 64px 22px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    padding: 71px 22px 150px 22px;
+  }
 }
 
 .introduction__image-block {
@@ -47,6 +81,10 @@
   margin: 0 auto;
   row-gap: 31px;
   z-index: 1;
+
+  @media (min-width: $tablet) {
+    max-width: 465px;
+  }
 }
 
 .introduction__picture {
@@ -68,6 +106,13 @@
 
   &--2 {
     align-self: flex-end;
+
+    @media (min-width: $tablet) {
+      position: absolute;
+      top: 125px;
+      right: -3px;
+      z-index: -2;
+    }
 
     &::before {
       content: "";
@@ -91,11 +136,43 @@
       width: 102px;
       height: 101px;
       z-index: -1;
+
+      @media (min-width: $tablet) {
+        bottom: 248px;
+        right: -21px;
+      }
+    }
+  }
+
+  &--3 {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      bottom: -90px;
+      left: 71px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -18px;
+        right: -23px;
+        background-image: url("../images/dots-1.svg");
+        background-repeat: no-repeat;
+        width: 73px;
+        height: 60px;
+        z-index: -1;
+      }
     }
   }
 }
 
 .introduction__image {
+  &--1 {
+
+  }
+
   &--2 {
     position: absolute;
     top: 32%;
@@ -103,10 +180,20 @@
     transform: translateX(-50%);
     min-width: 140px;
     max-width: 271px;
+
+    @media (min-width: $tablet) {
+      top: 68px;
+      left: 56%;
+      max-width: 140px;
+    }
+  }
+
+  &--3{
+    border-radius: 5px;
   }
 
   &--4 {
-    display: none;
+    border-radius: 10px;
   }
 }
 
