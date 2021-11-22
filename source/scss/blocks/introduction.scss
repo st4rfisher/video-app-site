@@ -7,6 +7,7 @@
     padding-top: 91px;
     @include flex-container(row, center, center);
     column-gap: 37px;
+    padding-bottom: 30px;
   }
 }
 
