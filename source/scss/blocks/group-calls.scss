@@ -7,36 +7,68 @@
   background-size: cover;
   padding-top: 46px;
   padding-bottom: 57px;
+
+  @media (min-width: $tablet) {
+    padding-top: 92px;
+    align-items: flex-start;
+    row-gap: 32px;
+    background-position: -273px -197px;
+    background-size: 974px 1024px;
+  }
 }
 
 .group-calls__title {
   @include title(17px, 28px, $color8, 0);
   text-align: center;
 
+  @media (min-width: $tablet) {
+    @include title(36px, 42px, $color8, 0 66px);
+    text-align: left;
+
+  }
 }
 
 .group-calls__paragraph {
   @include paragraph(16px, 26px, $color8);
   margin: 44px 23px;
 
+  @media (min-width: $tablet) {
+    @include paragraph(18px, 28px, $color8);
+    text-align: left;
+    margin: 0px 66px 11px 66px;
+  }
 }
 
 .group-calls__link {
   @include button-link;
   @include button-link-modified($color3, $color1, none);
-  width: 222px;
+  // width: 222px;
+  @media (min-width: $tablet) {
+    padding: 16px 33px 14px 34px;
+    margin-left: 66px;
+  }
+
 }
 
 .group-calls__image-wrapper {
   width: 100%;
   box-sizing: border-box;
   margin: 94px 0 111px 0;
+
+  @media (min-width: $tablet) {
+    margin: 63px 0 111px 0;
+  }
+
 }
 
 .group-calls__image-block {
   position: relative;
   margin: 0 auto;
   max-width: 430px;
+
+  @media (min-width: $tablet) {
+    max-width: 900px;
+  }
 }
 
 
@@ -49,6 +81,11 @@
   &--1 {
     position: relative;
     width: min-content;
+
+    @media (min-width: $tablet) {
+      height: 400px;
+    }
+
     &::before {
       @include shadow(100%);
     }
@@ -62,7 +99,13 @@
     position: absolute;
     top: 162px;
     left: 100%;
-    transform: translate(-100%)
+    transform: translate(-100%);
+
+    @media (min-width: $tablet) {
+      top: 52px;
+      left: auto;
+      right: -188px;
+    }
   }
 }
 
