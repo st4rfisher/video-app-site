@@ -3,7 +3,7 @@
   row-gap: 18px;
   background-color: $color3;
   padding-top: 49px;
-  padding-bottom: 32px;
+  padding-bottom: 62px;
 
   @media (min-width: $tablet) {
     @include flex-container(row, center, flex-start);
@@ -27,8 +27,8 @@
 
   @media (min-width: $tablet) {
     @include paragraph(18px, 28px, $color8);
-    text-align: left;;
-    margin: 17px 70px 52px 73px;
+    text-align: left;
+    margin: 17px 11% 52px 11%;
   }
 }
 
@@ -39,7 +39,7 @@
     @include button-link-modified($color3, $color1, none);
 
     @media (min-width: $tablet) {
-      margin-left: 76px;
+      margin-left: 11%;
     }
   }
 
@@ -52,7 +52,12 @@
 .access__image-wrapper {
   width: 100%;
   box-sizing: border-box;
-  padding: 49px 48px 0 0;
+  padding: 133px 48px 0 0;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin: 200px 0 75px 0;
+  }
 }
 
 .access__image-block {
@@ -61,13 +66,41 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 300px;
-  margin: 88px auto 30px auto;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    max-width: 800px;
+  }
 }
 
 .access__picture {
   &--2 {
-    position: relative;
-    margin-right: 28px;
+    position: absolute;
+    top: -65px;
+    right: 71px;
+
+    @media (min-width: $tablet) {
+      top: -138px;
+      right: 238px;
+    }
+
+    &::after {
+      @include panel(100px);
+      background-size: contain;
+      background-position: 0, 26px, 51px;
+      height: 18px;
+      width: 70px;
+      bottom: -204px;
+      left: 57px;
+
+      @media (min-width: $tablet) {
+        background-position: 0, 48px, 96px;
+        height: 36px;
+        width: 132px;
+        bottom: -432px;
+        left: 117px;
+      }
+    }
   }
 }
 
@@ -77,22 +110,18 @@
   &--1 {
     margin: 0 auto;
     box-shadow: $box-shadow;
-
-    @media (min-width: $tablet) {
-
-    }
   }
 
   &--2 {
     position: absolute;
-    top: -259px;
-    left: 100%;
-    transform: translateX(-100%);
     border-radius: 10px;
     box-shadow: $box-shadow;
-    margin-left: 69px;
     border-radius: 18px;
     outline: 2px solid $color3;
+
+    @media (min-width: $tablet) {
+      outline: 5px solid $color3;
+    }
   }
 }
 
