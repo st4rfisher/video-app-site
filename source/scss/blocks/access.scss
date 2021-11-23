@@ -4,30 +4,50 @@
   background-color: $color3;
   padding-top: 49px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    @include flex-container(row, center, flex-start);
+    padding-top: 121px;
+    column-gap: 23px;
+  }
 }
 
 .access__title {
   @include title(17px, 28px, $color8, 0 17px);
+
+  @media (min-width: $tablet) {
+    @include title(36px, 42px, $color8, 0 11%);
+    text-align: left;
+  }
 }
 
 .access__paragraph {
   @include paragraph(16px, 26px, $color8);
   margin: 26px 15px;
+
+  @media (min-width: $tablet) {
+    @include paragraph(18px, 28px, $color8);
+    text-align: left;;
+    margin: 17px 70px 52px 73px;
+  }
 }
 
 .access__link {
   @include button-link;
-  width: 222px;
 
   &--colored {
     @include button-link-modified($color3, $color1, none);
+
+    @media (min-width: $tablet) {
+      margin-left: 76px;
+    }
   }
 
   &--uncolored {
     @include button-link-modified($color1, $transparent, $link-border-2);
+    padding: 15px 41px;
   }
 }
-
 
 .access__image-wrapper {
   width: 100%;
@@ -41,7 +61,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 300px;
-  max-height: 1050px;
   margin: 88px auto 30px auto;
 }
 
@@ -58,7 +77,10 @@
   &--1 {
     margin: 0 auto;
     box-shadow: $box-shadow;
-    max-width: 250px;
+
+    @media (min-width: $tablet) {
+
+    }
   }
 
   &--2 {
