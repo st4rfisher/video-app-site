@@ -15,7 +15,6 @@
   @include title(24px, 32px, $color3);
   text-align: center;
 
-
   @media (min-width: $tablet) {
     @include title(46px, 52px, $color3, 0 11%);
   }
