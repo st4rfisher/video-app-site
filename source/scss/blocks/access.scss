@@ -74,10 +74,39 @@
 }
 
 .access__picture {
+  width: min-content;
+
+  &--1 {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 41px;
+      height: 34px;
+      background-image: url(../images/dots-3.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+
+      @media (min-width: $tablet) {
+        top: -33px;
+        left: -32px;
+        width: 87px;
+        height: 82px;
+      }
+    }
+  }
+
   &--2 {
     position: absolute;
     top: -65px;
     right: 71px;
+    z-index: 2;
 
     @media (min-width: $tablet) {
       top: -138px;
