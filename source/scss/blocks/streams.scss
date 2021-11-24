@@ -1,21 +1,40 @@
 .streams {
   @include flex-container(column, center, center);
   padding-top: 47px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    @include flex-container(row, center, flex-start);
+    row-gap: 44px;
+    padding-top: 92px;
+    padding-bottom: 94px;
+  }
 }
 
 .streams__title {
   @include title(24px, 32px, $color3, 0);
+
+  @media (min-width: $tablet) {
+    @include title(36px, 42px, $color3, 0 11%);
+    text-align: left;
+  }
 }
 
 .streams__paragraph {
   @include paragraph(16px, 26px, $color3);
   margin: 44px 18px;
+
+  @media (min-width: $tablet) {
+    @include paragraph(18px, 28px, $color3);
+    text-align: left;
+    margin: 0 11%;
+  }
 }
 
 .streams__link {
   @include button-link;
-  width: 222px;
-  
+  margin-left: 11%;
+
   &--colored {
     @include button-link-modified($color1, $color3, none);
   }
@@ -25,12 +44,20 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin: 90px 0 65px 0;
+  margin: 90px 0 35px 0;
   border-radius: 10px;
+
+  @media (min-width: $tablet) {
+    overflow: visible;
+    margin: 16px 0 30px;
+    padding-bottom: 0;
+  }
+
 
   &::after {
     @include panel(0);
     bottom: 5px;
+    z-index: 2;
   }
 }
 
@@ -40,6 +67,29 @@
   width: min-content;
   margin: 0 auto;
   box-shadow: $box-shadow;
+  z-index: 1;
+
+  &::after {
+
+
+    @media (min-width: $tablet) {
+      content: "";
+      position: absolute;
+      background-image: url("../images/dots-4.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+      bottom: -34px;
+      left: -52px;
+      width: 86px;
+      height: 102px;
+    }
+  }
+}
+
+.streams__image {
+  display: block;
+  border-radius: 10px;
 
   &::before {
     position: absolute;
@@ -50,9 +100,5 @@
     height: 10px;
     background: url("../images/dots-4.svg") no-repeat;
   }
-}
 
-.streams__image {
-  display: block;
-  border-radius: 10px;
 }
