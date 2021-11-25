@@ -13,6 +13,11 @@
     row-gap: 30px;
     column-gap: 20px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 56px;
+    @include flex-container(row, center, center);
+  }
 }
 
 .features__item {
@@ -38,5 +43,11 @@
   @media (min-width: $tablet) {
     width: auto;
     padding: 18px 40px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 22px 50px;
   }
 }
