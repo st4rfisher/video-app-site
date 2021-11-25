@@ -197,6 +197,13 @@
         bottom: 248px;
         right: -21px;
       }
+
+      @media (min-width: $tablet) {
+        width: 120px;
+        height: 118px;
+        bottom: 299px;
+        right: -25px;
+      }
     }
   }
 
@@ -236,10 +243,6 @@
 }
 
 .introduction__image {
-  &--1 {
-
-  }
-
   &--2 {
     position: absolute;
     top: 32%;
