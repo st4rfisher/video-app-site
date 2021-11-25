@@ -6,11 +6,19 @@
     display: block;
     max-width: 300px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 800px;
+  }
 }
 
 .menu__list {
-  @include flex-container(row, center, center);
   column-gap: 31px;
+  row-gap: 30px;
+
+  @media (min-width: $tablet) {
+    @include flex-container(row, center, flex-start);
+  }
 }
 
 .menu__item {
@@ -20,7 +28,7 @@
 .menu__link {
   text-decoration: none;
   color: inherit;
-  
+
 }
 
 
