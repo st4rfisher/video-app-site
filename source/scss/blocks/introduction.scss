@@ -1,13 +1,32 @@
 .introduction {
   @include flex-container(column, center, center);
-  row-gap: 18px;
   padding-top: 41px;
 
   @media (min-width: $tablet) {
     padding-top: 91px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    @include grid-container(repeat(2, 1fr), 1fr, center);
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+.introduction__content {
+  @include flex-container(column, center, center);
+  row-gap: 19px;
+
+  @media (min-width: $tablet) {
     @include flex-container(row, center, center);
     column-gap: 37px;
-    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    @include flex-container(row, center, flex-start);
+    column-gap: 20px;
+    padding: 41px 0px;
   }
 }
 
@@ -18,13 +37,28 @@
   @media (min-width: $tablet) {
     @include title(46px, 52px, $color3, 0 11%);
   }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+    margin: 0;
+  }
 }
 
 .introduction__paragraph {
   @include paragraph(13px, 20px, $color3);
   text-align: center;
-  margin: 29px 23px;
+  margin: 26px 9% 29px 9%;
 
+  @media (min-width: $tablet) {
+    @include paragraph(20px, 28px, $color3);
+    margin: 16px 14% 45px 14%;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+    margin: 15px 55px 47px 0;
+  }
 
   &:nth-of-type(2) {
     margin: 0 23px;
@@ -33,12 +67,11 @@
       @include paragraph(14px, 18px, $color3);
       margin: 0 26%;
     }
-  }
 
-  @media (min-width: $tablet) {
-    @include paragraph(20px, 28px, $color3);
-    margin: 16px 14% 45px 14%;
-    width: 100%;
+    @media (min-width: $desktop) {
+      margin: 0 85px 0 0;
+      text-align: left;
+    }
   }
 }
 
@@ -52,22 +85,26 @@
 
   &--colored {
     @include button-link-modified($color1, $color3, none);
-
   }
 
   &--uncolored {
     @include button-link-modified($color3, $transparent, $link-border-1);
-
   }
 }
 
 .introduction__image-wrapper {
   width: 100%;
-  padding: 53px 22px 64px 22px;
+  padding: 70px 22px 64px 22px;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    padding: 71px 22px 150px 22px;
+    padding: 86px 22px 150px 22px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -85,22 +122,38 @@
   @media (min-width: $tablet) {
     max-width: 465px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 100%;
+  }
 }
 
 .introduction__picture {
   &--1 {
     align-self: flex-start;
 
+    @media (min-width: $desktop) {
+      position: absolute;
+      top: 12px;
+      left: 70px;
+    }
+
     &::before {
       content: "";
       position: absolute;
       top: -16px;
       left: -24px;
-      background-image: url("../images/dots-2.svg");
-      background-repeat: no-repeat;
+      background: url("../images/dots-2.svg") no-repeat center/cover;
       width: 101px;
       height: 39px;
       z-index: -1;
+
+      @media (min-width: $tablet) {
+        top: -25px;
+        left: -25px;
+        width: 152px;
+        height: 58px;
+      }
     }
   }
 
@@ -114,13 +167,17 @@
       z-index: -2;
     }
 
+    @media (min-width: $desktop) {
+      top: 162px;
+      right: -83px;
+    }
+
     &::before {
       content: "";
       position: absolute;
       bottom: -17px;
       right: -23px;
-      background-image: url("../images/dots-1.svg");
-      background-repeat: no-repeat;
+      background: url("../images/dots-1.svg") no-repeat center/cover;
       width: 73px;
       height: 59px;
       z-index: -1;
@@ -131,8 +188,7 @@
       position: absolute;
       bottom: 141px;
       right: -23px;
-      background-image: url("../images/figure-3.svg");
-      background-repeat: no-repeat;
+      background: url("../images/figure-3.svg") no-repeat center/cover;
       width: 102px;
       height: 101px;
       z-index: -1;
@@ -158,12 +214,23 @@
         position: absolute;
         bottom: -18px;
         right: -23px;
-        background-image: url("../images/dots-1.svg");
-        background-repeat: no-repeat;
+        background: url("../images/dots-1.svg") no-repeat center/cover;
         width: 73px;
         height: 60px;
         z-index: -1;
+
+        @media (min-width: $desktop) {
+          bottom: -267px;
+          right: -27px;
+          width: 87px;
+          height: 72px;
+        }
       }
+    }
+
+    @media (min-width: $desktop) {
+      top: 244px;
+      left: 155px;
     }
   }
 }
@@ -185,6 +252,12 @@
       top: 68px;
       left: 56%;
       max-width: 140px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 96px;
+      left: 383px;
+      max-width: 100%;
     }
   }
 

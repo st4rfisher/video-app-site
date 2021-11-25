@@ -38,7 +38,7 @@
 }
 
 
-@mixin grid-container($columns, $rows, $justify) {
+@mixin grid-container($columns, $rows, $align:center, $justify:center) {
   display: grid;
   grid-template-columns: $columns;
   grid-template-rows: $rows;
