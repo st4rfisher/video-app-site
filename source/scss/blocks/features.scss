@@ -3,20 +3,25 @@
 }
 
 .features__list {
-  @include flex-container(column, center, center);
+  @include flex-container(row, center, center);
   row-gap: 14px;
+  column-gap: 14px;
   padding: 38px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
 
   @media (min-width: $tablet) {
-    @include flex-container(row, center, space-evenly);
+    @include flex-container(row, center, center);
     padding: 73px 12px 73px 12px;
     row-gap: 30px;
     column-gap: 20px;
+    max-width: 670px;
   }
 
-  @media (min-width: $tablet) {
-    padding: 56px;
+  @media (min-width: $desktop) {
+    padding: 56px 0;
     @include flex-container(row, center, center);
+    max-width: 935px;
   }
 }
 
