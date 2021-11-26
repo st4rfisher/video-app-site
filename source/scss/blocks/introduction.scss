@@ -1,16 +1,14 @@
 .introduction {
   @include flex-container(column, center, center);
-  padding-top: 41px;
+  padding: 41px 20px 0 20px;
 
   @media (min-width: $tablet) {
-    padding-top: 91px;
-    padding-bottom: 30px;
+    padding: 91px 50px 30px 50px;
   }
 
   @media (min-width: $desktop) {
     @include grid-container(repeat(2, 1fr), 1fr, center);
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding: 50px 172px 80px 172px;
   }
 }
 
