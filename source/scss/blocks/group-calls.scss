@@ -1,13 +1,8 @@
 .group-calls {
-  background-color: $color3;
-  background-image: url("../images/figure-1.svg");
-  background-repeat: no-repeat;
-  background-position: -350px -330px;
-  background-size: cover;
   padding: 46px 20px 57px 20px;
 
   @media (min-width: $tablet) {
-    padding: 92px 50px;
+    padding: 92px 50px 57px 50px;
     background-position: -273px -197px;
     background-size: 974px 1024px;
   }

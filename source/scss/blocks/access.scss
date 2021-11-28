@@ -1,7 +1,6 @@
 .access {
   @include flex-container(column, center, center);
   row-gap: 18px;
-  background-color: $color3;
   padding-top: 49px;
   padding-bottom: 62px;
 

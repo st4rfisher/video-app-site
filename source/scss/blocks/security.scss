@@ -1,6 +1,5 @@
 .security {
   @include flex-container(column, center, center);
-  background-color: $color3;
   padding-top: 45px;
 
   @media (min-width: $tablet) {
