@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop) {
     @include grid-container(repeat(2, 1fr), 1fr, flex-start);
-    padding: 170px 82px 0 82px;
+    padding: 170px 82px 170px 82px;
   }
 }
 
