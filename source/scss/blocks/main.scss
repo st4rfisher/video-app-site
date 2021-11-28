@@ -3,27 +3,21 @@
 }
 
 .main__background {
+  background: url("../images/figure-1.svg") no-repeat,
+  url("../images/figure-4.svg") no-repeat,
+  url("../images/figure-2.svg") no-repeat,
+  url("../images/figure-5.svg") no-repeat;
+  background-color: $color3;
+  background-position:  -320px -250px, 31px 1142px, -200px 2245px, 146px 2818px;
+  background-size: 1020px, 857px 848px, 955px 865px, 152px;
 
   @media (min-width: $tablet) {
-    background: url("../images/figure-1.svg") no-repeat,
-    url("../images/figure-4.svg") no-repeat,
-    url("../images/figure-2.svg") no-repeat,
-    url("../images/figure-5.svg") no-repeat;
     background-position:  -318px -149px, 170px 1233px, -200px 2336px, 560px 3247px;
     background-size: 1020px, 857px 848px, 955px 865px, 152px;
-    background-color: $color3;
   }
 
   @media (min-width: $desktop) {
-    background: url("../images/figure-1.svg") no-repeat,
-    url("../images/figure-4.svg") no-repeat,
-    url("../images/figure-2.svg") no-repeat,
-    url("../images/figure-5.svg") no-repeat;
     background-position:  -318px -149px, 842px 522px, -97px 1342px, 1232px 2108px;
     background-size: 1020px, 857px 848px, 772px 874px, 152px;
-    background-color: $color3;
   }
-
-  // background-repeat: no-repeat;
-  // background-position: -76.5% -8.5%, 144.5% 28.5%, -16.5% 74.6%, 95.7% 83.5%;
 }
