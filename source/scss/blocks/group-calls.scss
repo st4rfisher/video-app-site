@@ -1,19 +1,36 @@
 .group-calls {
-  @include flex-container(column, center, center);
   background-color: $color3;
   background-image: url("../images/figure-1.svg");
   background-repeat: no-repeat;
   background-position: -350px -330px;
   background-size: cover;
-  padding-top: 46px;
-  padding-bottom: 57px;
+  padding: 46px 20px 57px 20px;
 
   @media (min-width: $tablet) {
-    padding-top: 92px;
-    align-items: flex-start;
-    row-gap: 32px;
+    padding: 92px 50px;
     background-position: -273px -197px;
     background-size: 974px 1024px;
+  }
+
+  @media (min-width: $desktop) {
+    @include grid-container(repeat(2, 1fr), 1fr, flex-start);
+    padding: 170px 82px 0 82px;
+  }
+}
+
+.group-calls__content {
+  @include flex-container(column, center, center);
+
+  @media (min-width: $tablet) {
+    @include flex-container(column, flex-start, center);
+    row-gap: 32px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop) {
+    order: 2;
+    margin: 0;
+    padding: 13px 10px 13px 10px;
   }
 }
 
@@ -24,18 +41,25 @@
   @media (min-width: $tablet) {
     @include title(36px, 42px, $color8, 0 66px);
     text-align: left;
+  }
 
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
 
 .group-calls__paragraph {
   @include paragraph(16px, 26px, $color8);
-  margin: 44px 23px;
+  margin: 44px 24px;
 
   @media (min-width: $tablet) {
     @include paragraph(18px, 28px, $color8);
     text-align: left;
     margin: 0px 66px 11px 66px;
+  }
+
+  @media (min-width: $desktop) {
+    // margin: 32px 87px 43px 0px;
   }
 }
 
@@ -48,6 +72,10 @@
     margin-left: 66px;
   }
 
+  @media (min-width: $desktop) {
+    padding: 18px 33px 17px 34px;
+    margin: 0;
+  }
 }
 
 .group-calls__image-wrapper {
@@ -56,9 +84,13 @@
   margin: 94px 0 111px 0;
 
   @media (min-width: $tablet) {
-    margin: 63px 0 111px 0;
+    margin: 95px 0 111px 0;
   }
 
+  @media (min-width: $desktop) {
+    margin: 0;
+    order: 1;
+  }
 }
 
 .group-calls__image-block {
@@ -69,13 +101,14 @@
   @media (min-width: $tablet) {
     max-width: 900px;
   }
+
+
 }
 
 
 .group-calls__picture {
   display: block;
-  height: 300px;
-
+  // height: 300px;
   margin: 0 auto;
 
   &--1 {
@@ -84,6 +117,10 @@
 
     @media (min-width: $tablet) {
       height: 400px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
     }
 
     &::before {
@@ -106,6 +143,12 @@
       left: auto;
       right: -188px;
     }
+
+    @media (min-width: $desktop) {
+         top: 45px;
+      left: auto;
+      right: -144px;
+    }
   }
 }
 
@@ -117,6 +160,7 @@
   }
 
   &--2 {
+    border: 8px solid $color3;
     border-radius: 15px 15px 10px 10px;
   }
 }
