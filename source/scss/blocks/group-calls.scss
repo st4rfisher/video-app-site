@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $desktop) {
-    // margin: 32px 87px 43px 0px;
+    margin: 0 80px 11px 0px;
   }
 }
 
@@ -108,12 +108,12 @@
 
 .group-calls__picture {
   display: block;
-  // height: 300px;
   margin: 0 auto;
 
   &--1 {
     position: relative;
     width: min-content;
+    height: 300px;
 
     @media (min-width: $tablet) {
       height: 400px;
@@ -160,8 +160,12 @@
   }
 
   &--2 {
-    border: 8px solid $color3;
+    border: 4px solid $color3;
     border-radius: 15px 15px 10px 10px;
+
+    @media (min-width: $tablet) {
+      border: 8px solid $color3;
+    }
   }
 }
 
