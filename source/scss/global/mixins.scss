@@ -25,7 +25,6 @@
   line-height: $line-height;
   color: $color;
   word-break: break-word;
-  // max-width: 350px;
   text-align: center;
 }
 
@@ -37,7 +36,6 @@
   justify-content: $justify;
 }
 
-
 @mixin grid-container($columns, $rows, $align:center, $justify:center) {
   display: grid;
   grid-template-columns: $columns;
@@ -45,7 +43,6 @@
   align-items: $align;
   justify-content: $justify;
 }
-
 
 @mixin panel($bottom) {
   position: absolute;
@@ -89,8 +86,10 @@
   text-decoration: none;
   min-height: 41px;
   border-radius:5px;
+  min-width: 222px;
 
   @media (min-width: $tablet) {
+    min-width: auto;
     padding: 15px 35px;
   }
 }

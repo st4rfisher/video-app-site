@@ -1,13 +1,31 @@
 .access {
   @include flex-container(column, center, center);
-  row-gap: 18px;
-  padding-top: 49px;
-  padding-bottom: 62px;
+  padding: 49px 20px 60px 20px;
+  row-gap: 19px;
 
   @media (min-width: $tablet) {
     @include flex-container(row, center, flex-start);
-    padding-top: 121px;
+    padding: 104px 50px 61px 50px;
+  }
+
+  @media (min-width: $desktop) {
+    @include grid-container(repeat(2, 1fr), 1fr, flex-start);
+    padding: 152px 101px 201px 122px
+  }
+}
+
+.access__content {
+  @include flex-container(column, center, center);
+  row-gap: 19px;
+
+  @media (min-width: $tablet) {
+    @include flex-container(row, center, flex-start);
     column-gap: 23px;
+  }
+
+  @media (min-width: $desktop) {
+    order: 2;
+    padding: 61px 61px 0px 0;
   }
 }
 
@@ -18,16 +36,24 @@
     @include title(36px, 42px, $color8, 0 11%);
     text-align: left;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .access__paragraph {
   @include paragraph(16px, 26px, $color8);
-  margin: 26px 15px;
+  margin: 25px 15px;
 
   @media (min-width: $tablet) {
     @include paragraph(18px, 28px, $color8);
     text-align: left;
-    margin: 17px 11% 52px 11%;
+    margin: 17px 11% 53px 11%;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 17px 0 55px 0;
   }
 }
 
@@ -39,6 +65,10 @@
 
     @media (min-width: $tablet) {
       margin-left: 11%;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
     }
   }
 
@@ -56,6 +86,11 @@
   @media (min-width: $tablet) {
     padding: 0;
     margin: 219px 0 138px 0;
+  }
+
+  @media (min-width: $desktop) {
+    order: 1;
+    margin: 0;
   }
 }
 
@@ -79,6 +114,10 @@
     position: relative;
     margin: 0 auto;
     z-index: 1;
+
+    @media (min-width: $desktop) {
+      margin: 143px 0 0 0;
+    }
 
     &::before {
       content: "";
@@ -110,6 +149,12 @@
     @media (min-width: $tablet) {
       top: -138px;
       right: 238px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 5px;
+      right: auto;
+      left: 302px;
     }
 
     &::after {
