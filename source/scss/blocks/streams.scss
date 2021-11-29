@@ -1,31 +1,28 @@
 .streams {
   @include flex-container(column, center, center);
-  padding-top: 47px;
-  padding-bottom: 30px;
+  padding: 47px 20px 30px 20px;
+  background: $background;
 
   @media (min-width: $tablet) {
     @include flex-container(row, center, flex-start);
     row-gap: 44px;
-    padding-top: 92px;
-    padding-bottom: 94px;
+    padding: 92px 50px 94px 47px;
   }
 
   @media (min-width: $desktop) {
     @include grid-container(repeat(2, 1fr), 1fr, flex-start);
-    row-gap: 44px;
     padding: 103px 122px 106px 172px;
   }
 }
 
 .streams__content {
-
+  @include flex-container(column, center, center);
 
   @media (min-width: $tablet) {
-
+    @include flex-container(row, center, flex-start);
   }
 
   @media (min-width: $desktop) {
-    @include flex-container(row, center, flex-start);
     order: 1;
   }
 }
@@ -50,7 +47,7 @@
   @media (min-width: $tablet) {
     @include paragraph(18px, 28px, $color3);
     text-align: left;
-    margin: 0 11%;
+    margin: 44px 11%;
   }
 
   @media (min-width: $desktop) {
@@ -60,7 +57,10 @@
 
 .streams__link {
   @include button-link;
-  margin-left: 11%;
+
+  @media (min-width: $tablet) {
+    margin-left: 11%;
+  }
 
   @media (min-width: $desktop) {
     margin: 0;
@@ -138,4 +138,8 @@
 .streams__image {
   display: block;
   border-radius: 10px;
+
+  &--2 {
+    box-shadow: $box-shadow;
+  }
 }
