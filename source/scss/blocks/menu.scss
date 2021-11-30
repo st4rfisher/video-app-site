@@ -1,6 +1,17 @@
 .menu {
   @include menu-text;
   display: none;
+  padding: 20px;
+  position: absolute;
+  width: calc(100% - 40px);
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background: $color1;
+
+  &--show {
+    display: block;
+  }
 
   @media (min-width: $tablet) {
     display: block;
@@ -34,7 +45,10 @@
 
 .menu__close {
   @include button-link-modified(none, $transparent, none);
-
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 0;
   @media (min-width: $tablet) {
     display: none;
   }
