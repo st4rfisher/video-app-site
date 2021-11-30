@@ -62,4 +62,48 @@
 .footer__link {
   color: $color1;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+
+  &--paragraph-link:hover {
+    background-color: $color1;
+    color: $color3;
+  }
+
+  &--paragraph-link:active {
+    background-color: $color1;
+    color: $color3;
+  }
+}
+
+.footer__icon {
+  fill: $color1;
+  transition: 0.3s ease-in-out;
+
+  &--facebook {
+    &:hover {
+      fill: $facebook;
+      transform: scale(1.2);
+    }
+  }
+
+  &--vk {
+    &:hover {
+      fill: $vk;
+      transform: scale(1.2);
+    }
+  }
+
+  &--whatsup {
+    &:hover {
+      fill: $whatsup;
+      transform: scale(1.2);
+    }
+  }
+
+  &--telegram {
+    &:hover {
+      fill: $telegram;
+      transform: scale(1.2);
+    }
+  }
 }
