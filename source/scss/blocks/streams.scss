@@ -92,10 +92,14 @@
     @include panel(0);
     bottom: 5px;
     z-index: 2;
+    background-size: contain;
 
     @media (min-width: $desktop) {
       bottom: auto;
-      top: 252px;
+      width: 123px;
+      height: 34px;
+      background-position: 0, 43px, 88px;
+      top: 249px;
     }
   }
 }
