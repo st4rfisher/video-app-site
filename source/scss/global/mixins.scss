@@ -87,6 +87,19 @@
   min-height: 41px;
   border-radius:5px;
   min-width: 222px;
+  transition: 0.2s ease-in-out;
+
+  &[class*=link--colored]:hover {
+    outline: $link-border-1;
+    color: $color3;
+    background-color: $color2;
+  }
+
+  &[class*=link--uncolored]:hover {
+    
+    color: $color3;
+    background-color: $color1;
+  }
 
   @media (min-width: $tablet) {
     min-width: auto;
