@@ -1,7 +1,19 @@
 .page__container {
   min-width: $mobile;
-  background: $background;
   max-width: $desktop;
   margin: 0 auto;
   box-shadow: $box-shadow-page;
+}
+
+.page__background {
+  background: url("../images/figure-2.svg") no-repeat, $background;
+  background-position: -38px 57px, 100% 100%;
+
+  @media (min-width: $tablet) {
+    background-position: 73px 52px, 100% 100%;
+  }
+
+  @media (min-width: $desktop) {
+    background-position: 187px 52px, 100% 100%;
+  }
 }

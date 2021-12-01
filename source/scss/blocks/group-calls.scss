@@ -61,7 +61,7 @@
 .group-calls__link {
   @include button-link;
   @include button-link-modified($color3, $color1, none);
-  // width: 222px;
+
   @media (min-width: $tablet) {
     padding: 16px 33px 14px 34px;
     margin-left: 66px;
@@ -96,10 +96,7 @@
   @media (min-width: $tablet) {
     max-width: 900px;
   }
-
-
 }
-
 
 .group-calls__picture {
   display: block;

@@ -187,16 +187,19 @@
       bottom: 141px;
       right: -23px;
       background: url("../images/figure-3.svg") no-repeat center/cover;
+      background-size: contain;
       width: 102px;
       height: 101px;
       z-index: -1;
 
       @media (min-width: $tablet) {
-        bottom: 248px;
+        width: 102px;
+        height: 118px;
+        bottom: 240px;
         right: -21px;
       }
 
-      @media (min-width: $tablet) {
+      @media (min-width: $desktop) {
         width: 120px;
         height: 118px;
         bottom: 299px;
