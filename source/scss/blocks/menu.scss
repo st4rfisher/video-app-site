@@ -6,10 +6,6 @@
   z-index: 2;
   left: 0;
   top: 0;
-  // opacity: 0;
-  // visibility: hidden;
-  // transition:  0.2s ease-in-out;
-
 
   @media (min-width: $tablet) {
     position: static;
@@ -25,8 +21,6 @@
   }
 
   &--show {
-    // opacity: 1;
-    // visibility: visible;
     display: block;
   }
 
@@ -40,17 +34,10 @@
   column-gap: 31px;
   row-gap: 30px;
   background-color: $color1;
-  opacity: 0;
-  visibility: hidden;
-  transition:  3s ease-in-out;
-
-  &--show {
-    opacity: 1;
-    visibility: visible;
-  }
 
   @media (min-width: $tablet) {
     @include flex-container(row, center, flex-start);
+    background-color: $transparent;
   }
 }
 
@@ -85,9 +72,6 @@
     transform: scale(0.99);
     opacity: 0.7;
   }
-
-
-  // max-width: 200px;
 }
 
 .menu__close {
