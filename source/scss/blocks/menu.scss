@@ -1,14 +1,33 @@
 .menu {
   @include menu-text;
   display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-color: $color1;
 
   @media (min-width: $tablet) {
+    position: static;
     display: block;
-    max-width: 300px;
+    width: auto;
+    max-width: 400px;
+    order: 2;
+    background-color: $transparent;
   }
 
   @media (min-width: $desktop) {
     max-width: 800px;
+  }
+
+  &--show {
+    display: block;
+  }
+
+  &--no-js {
+    position: static;
+    box-shadow: $box-shadow-4;
   }
 }
 
@@ -22,7 +41,18 @@
 }
 
 .menu__item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid $color3;
+  border-bottom: 2px solid darken($color1, 20%);
+  padding: 15px;
+
+  @media (min-width: $tablet) {
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .menu__link {
@@ -41,10 +71,18 @@
     transform: scale(0.99);
     opacity: 0.7;
   }
+
+
+  // max-width: 200px;
 }
 
 .menu__close {
   @include button-link-modified(none, $transparent, none);
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  padding: 0;
+  fill: $color3;
 
   @media (min-width: $tablet) {
     display: none;

@@ -1,16 +1,23 @@
 .header__navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  box-sizing: border-box;
+  position: relative;
 
   @media (min-width: $tablet) {
+    @include flex-container(row, center, space-between);
     padding: 24px 100px;
   }
 
   @media (min-width: $desktop) {
     padding: 24px 172px;
+  }
+}
+
+.header__panel {
+  @include flex-container(row, center, space-between);
+  padding: 10px 20px;
+
+  @media (min-width: $tablet) {
+    order: 1;
+    padding: 0;
   }
 }
 
