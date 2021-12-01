@@ -23,8 +23,8 @@
 
 .header__menu-button {
   @include button-link-modified(none, $transparent, none);
-  padding: 5px;
-
+  padding: 0;
+  
   @media (min-width: $tablet) {
     display: none;
   }
