@@ -90,9 +90,15 @@
 
   &::after {
     @include panel(0);
-    bottom: 5px;
+    bottom: 8px;
     z-index: 2;
     background-size: contain;
+    width: 115px;
+
+    @media (min-width: $tablet) {
+      background-position: 0, 43px, 88px;
+      width: 126px;
+    }
 
     @media (min-width: $desktop) {
       bottom: auto;
