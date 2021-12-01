@@ -4,7 +4,15 @@
 </clipPath>
 </defs><symbol id="burger-menu-icon" viewBox="0 0 36 20">
 <path d="M0 1H36M0 19H36M0 10H36" stroke="white" stroke-width="2"/>
-</symbol><symbol id="close-icon" viewBox="0 0 14 14"><title/><desc/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#000000" id="Core" transform="translate(-341.000000, -89.000000)"><g id="close" transform="translate(341.000000, 89.000000)"><path d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z" id="Shape"/></g></g></g></symbol><symbol id="disable-call-icon" viewBox="0 0 29 29">
+</symbol><symbol id="close-icon" viewBox="0 0 14 14">
+    <g fill-rule="evenodd" id="Page-1" stroke-width="0">
+        <g id="Core" transform="translate(-341.000000, -89.000000)">
+          <g id="close" transform="translate(341.000000, 89.000000)">
+            <path d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z" id="Shape"/>
+          </g>
+        </g>
+      </g>
+  </symbol><symbol id="disable-call-icon" viewBox="0 0 29 29">
 <circle cx="14.4554" cy="14.306" r="14.306" fill="#FF4550"/>
 <path d="M13.9375 13.0499C12.9202 13.0499 11.9346 13.1812 11.0127 13.4279V15.0553C11.0127 15.26 10.8665 15.4437 10.6566 15.5277C10.0335 15.7849 9.46765 16.1157 8.96535 16.4989C8.8509 16.5934 8.69195 16.6459 8.52027 16.6459C8.34224 16.6459 8.18329 16.5881 8.06884 16.4936L6.49201 15.1917C6.37756 15.1025 6.30762 14.9713 6.30762 14.8243C6.30762 14.6773 6.37756 14.546 6.49201 14.4516C8.43126 12.9344 11.0508 12 13.9375 12C16.8241 12 19.4437 12.9344 21.3829 14.4516C21.4974 14.546 21.5673 14.6773 21.5673 14.8243C21.5673 14.9713 21.4974 15.1025 21.3829 15.197L19.8061 16.4989C19.6916 16.5934 19.5327 16.6511 19.3547 16.6511C19.183 16.6511 19.024 16.5934 18.9096 16.5041C18.4073 16.1157 17.8351 15.7902 17.2119 15.533C17.0021 15.449 16.8559 15.2705 16.8559 15.0605V13.4331C15.9403 13.1812 14.9548 13.0499 13.9375 13.0499Z" fill="white"/>
 </symbol><symbol id="disable-video-icon" viewBox="0 0 29 29">
