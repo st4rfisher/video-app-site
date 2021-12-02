@@ -22,10 +22,16 @@
 }
 
 .header__menu-button {
+  display: none;
   @include button-link-modified(none, $transparent, none);
   padding: 0;
+
   
-  @media (min-width: $tablet) {
-    display: none;
+  &--show {
+    display: block;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
