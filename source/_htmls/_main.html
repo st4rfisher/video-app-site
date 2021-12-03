@@ -8,8 +8,16 @@
           Общайтесь с коллегами, бизнес-партнерами и друзьями бесплатно
           и без ограничений по времени.
         </p>
-        <a class="introduction__link introduction__link--colored" href="#">Начать звонок</a>
-        <a class="introduction__link introduction__link--uncolored" href="#">Конференция</a>
+        @@include('./_components/_link.html', {
+          "class": "introduction__link",
+          "modificator": "introduction__link--colored",
+          "text": "Начать звонок"
+        })
+        @@include('./_components/_link.html', {
+          "class": "introduction__link",
+          "modificator": "introduction__link--uncolored",
+          "text": "Начать звонок"
+        })
         <p class="introduction__paragraph">
           Для входа в VideoApplication авторизуйтесь
           или зарегистрируйтесь в системе.
@@ -63,7 +71,11 @@
             демонстрации экрана, переписка в удобном текстовом чате – в
             VideoApplication есть все для комфортного обсуждения проектов.
           </p>
-          <a class="group-calls__link group-calls__link--colored" href="#">Начать конференцию</a>
+          @@include('./_components/_link.html', {
+            "class": "group-calls__link",
+            "modificator": "group-calls__link--colored",
+            "text": "Начать конференцию"
+          })
         </div>
         <div class="group-calls__image-wrapper">
           <div class="group-calls__image-block" role="img">
@@ -91,7 +103,11 @@
             сможет присоединиться к звонку только после авторизации или через
             функцию распознавания лица.
           </p>
-          <a class="security__link security__link--colored" href="#">Начать конференцию</a>
+          @@include('./_components/_link.html', {
+            "class": "security__link",
+            "modificator": "security__link--colored",
+            "text": "Начать конференцию"
+          })
         </div>
         <div class="security__image-wrapper">
           <div class="security__image-block" role="img">
@@ -118,8 +134,16 @@
             ссылку. Ответить на звонок можно прямо из браузера на смартфоне,
             планшете или компьютере.
           </p>
-          <a class="access__link access__link--colored" href="#">Начать звонок</a>
-          <a class="access__link access__link--uncolored" href="#">Конференция</a>
+          @@include('./_components/_link.html', {
+            "class": "access__link",
+            "modificator": "access__link--colored",
+            "text": "Начать звонок"
+          })
+          @@include('./_components/_link.html', {
+            "class": "access__link",
+            "modificator": "access__link--uncolored",
+            "text": "Конференция"
+          })
         </div>
         <div class="access__image-wrapper">
           <div class="access__image-block" role="img">
@@ -146,7 +170,11 @@
           Помимо звонков, вы можете использовать VideoApplication для
           проведения онлайн-трансляций. Количество зрителей не ограничено.
         </p>
-        <a class="streams__link streams__link--colored" href="#">Начать звонок</a>
+        @@include('./_components/_link.html', {
+          "class": "streams__link",
+          "modificator": "streams__link--colored",
+          "text": "Начать звонок"
+        })
       </div>
       <div class="streams__image-wrapper" role="img">
         <picture class="streams__picture streams__picture--2">
