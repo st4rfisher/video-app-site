@@ -5,6 +5,7 @@ const {
 const sass = require('gulp-sass');
 const bulk = require('gulp-sass-bulk-importer');
 const autoprefixer = require('gulp-autoprefixer');
+const shorthand = require('gulp-shorthand');
 const plumber = require('gulp-plumber');
 const clean = require('gulp-clean-css');
 const concat = require('gulp-concat');
@@ -18,6 +19,7 @@ module.exports = function styles () {
   .pipe(bulk())
   .pipe(sass())
   .pipe(autoprefixer())
+  .pipe(shorthand())
   .pipe(clean({
     level: 2
   }))

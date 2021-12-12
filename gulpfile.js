@@ -6,12 +6,12 @@ exports.clean = tasks.clean;
 exports.copy = tasks.copy;
 exports.imagesOptimization = tasks.images;
 exports.html = tasks.html;
+exports.pug2html = tasks.pug2html;
 exports.copyImages = tasks.images;
 exports.styles = tasks.styles;
 exports.scripts = tasks.scripts;
 exports.sprite = tasks.sprite;
 exports.createWebp = tasks.webp;
-exports.copyImages = tasks.images;
 exports.reload = tasks.reloading;
 exports.server = tasks.server;
 exports.watcher = tasks.watcher;
@@ -21,6 +21,7 @@ exports.default = gulp.series(
   exports.copy,
   exports.copyImages,
   gulp.parallel(
+    exports.pug2html,
     exports.html,
     exports.styles,
     exports.scripts,
