@@ -1,6 +1,9 @@
 header(class="header")
   div(class="header__container")
     nav(class="header__navigation")
-      include menu
-    div(class="header__panel")
-
+      include components/menu.pug
+      div(class="header__panel")
+        include components/logo.pug
+        button(class="header__menu-button")
+          svg(class="header__icon" width="36px" height="18px")
+            use(xlink:href="images/icons/sprite.svg#burger-menu-icon")
