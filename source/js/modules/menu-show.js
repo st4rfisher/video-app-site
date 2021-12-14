@@ -5,9 +5,8 @@ const openButton = document.querySelector('.header__menu-button');
 
 document.addEventListener('DOMContentLoaded', () => {
   menu.classList.remove('menu--no-js');
-  // menu.style.visibility='hidden';
-  openButton.classList.add('header__menu--show');
-  closeButton.classList.add('menu__close-button--show');
+  openButton.classList.add('header__menu-button--show');
+  closeButton.classList.add('menu__close--show');
   menu.classList.remove('menu--show');
 });
 

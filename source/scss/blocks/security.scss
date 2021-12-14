@@ -90,28 +90,8 @@
     max-width: 1000px
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -16px;
-    left: -10px;
-    width: 40px;
-    height: 30px;
-    background-image: url(../images/dots-5.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-width: $tablet) {
-      bottom: -40px;
-      left: 15px;
-      width: 142px;
-      height: 71px;
-    }
-
-    @media (min-width: $desktop) {
-      bottom: -38px;
-      left: -44px;
-    }
+  &::after {
+    @include panel(0);
   }
 }
 
@@ -126,8 +106,25 @@
     }
 
     &::after {
-      @include panel(0);
+      content: "";
+      position: absolute;
+      bottom: -18px;
+      left: -26px;
+      width: 56px;
+      height: 36px;
+      background-image: url(../images/dots-5.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+
+      @media (min-width: $tablet) {
+        bottom: -40px;
+        left: -51px;
+        width: 142px;
+        height: 71px;
+      }
     }
+
   }
 
   &--2 {

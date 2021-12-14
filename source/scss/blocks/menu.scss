@@ -78,14 +78,19 @@
 
 .menu__close {
   @include button-link-modified(none, $transparent, none);
+  display: none;
   position: absolute;
   right: 13px;
   top: 13px;
   padding: 0;
   fill: $color3;
 
-  @media (min-width: $tablet) {
-    display: none;
+  &--show {
+    display: block;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 
